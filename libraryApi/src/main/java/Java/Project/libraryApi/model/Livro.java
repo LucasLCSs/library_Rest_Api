@@ -21,14 +21,14 @@ public class Livro {
 
     @Id
     @Column(nullable = false)
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     private UUID id;
 
     @Column(length = 25, nullable = false)
     private String isbn;
 
     @Column(length = 100, nullable = false)
-    private String titulo;
+    private String livro;
 
     @Column(name = "data_publicacao", nullable = false)
     private LocalDate dataPublicacao;
